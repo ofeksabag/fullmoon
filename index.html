@@ -1,0 +1,234 @@
+<html dir="rtl">
+	<head>
+		<title>fullmoon - פולמון</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+html, body {
+	padding: 0px;	margin: 0px;	font-size: 12px;	color: #000;
+	background-image: url('bg.gif');	font-family: 'Assistant', sans-serif;
+}
+.logo {
+	background-image: url('logo.png');	background-size: 100% 100%;
+	width: 300px;	height: 161px;	margin-top: 3%;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+.content {
+	width: 100%;	height: auto;	background: #000;	color: #FFF;	padding-bottom: 5%;
+}
+
+#headline {
+	color: #f66a10;	font-weight: bold;	text-shadow: 2px 2px 3px #856331, 4px 4px 3px #614e31;
+}
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+.more {
+	color: #f66a10;	text-shadow: 2px 2px 3px #856331, 4px 4px 3px #614e31;
+}
+i {
+	margin: 5px;
+}
+.info {
+	font-size: 16px;	margin-bottom: 2%;
+}
+.were {
+	position: fixed;	top: 0px;	left: 0px;	color: #FFF;
+	margin: 2%;	font-size: 14px;
+}
+.images {
+	margin-top: 2%;
+}
+
+		</style>
+	</head>
+	<body>
+		<center>
+<br />
+<div class="logo"></div>
+
+<div>
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g class="parallax">
+<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,0,0,0.5)" />
+<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0,0,0,0.4)" />
+<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,0,0,0.3)" />
+<use xlink:href="#gentle-wave" x="48" y="7" fill="#000" />
+</g>
+</svg>
+</div>
+<!--Waves end-->
+</div>
+<div class="content">
+
+<div class="info">
+	פול מון 2021 וייב קופנגן <span class="more">18+</span> פה בארץ! אם לא תסעו לתאילנד, תאילנד תגיע אליכם :)<br />
+	מדי חודש זה קורה: הלבנה מגיעה לשיאה ואנשים בכל העולם יוצאים לחגוג אל תוך הלילה<br />
+	ובעזרת צבעים, תפאורה מיוחדת ועם תותחי אולטרה ענקיים החלטנו ליצור את הדבר הבא בעולם האירועים.<br />
+	המיקום יתפרסם בהמשך, הישארו מעודכנים!
+	
+</div>
+
+<div class="container">
+
+  <h1 id="headline">מכירה מוקדמת בעוד</h1>
+  <div id="countdown">
+    <ul>
+      <li><span id="days"></span>ימים</li>
+      <li><span id="hours"></span>שעות</li>
+      <li><span id="minutes"></span>דקות</li>
+      <li><span id="seconds"></span>שניות</li>
+    </ul>
+  </div>
+  <div id="showurl" class="emoji">
+	המכירה החלה!
+  </div>
+</div>
+	<div class="images">
+		<img src="1.jpg" width="250" height="150">
+		<img src="2.jpg" width="250" height="150">
+		<img src="3.jpg" width="250" height="150">
+		<img src="4.jpg" width="250" height="150">
+	</div>
+</div>
+
+<div class="were">
+	אנחנו גם ב:
+	<div class="more">
+		<i style="font-size:30px; cursor: pointer;" class="fa fa-twitter"></i>
+		<i style="font-size:30px; cursor: pointer;" class="fa fa-instagram"></i>
+		<i style="font-size:30px; cursor: pointer;" class="fa fa-facebook"></i>
+	</div>
+</div>
+
+		</center>
+		<script>
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "09/30/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("showurl").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+		 integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+	</body>
+</html>
